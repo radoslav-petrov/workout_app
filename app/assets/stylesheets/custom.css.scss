@@ -4,3 +4,36 @@
 body {
   padding-top: 52px;
 }
+
+.alert-error {
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  color: #B94A48;
+  text-align: left;
+}
+
+.alert-alert, #error_explanation {
+  background-color: #f2DEDE;
+  border-color: #EBCCD1;
+  color: #A94442;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: #DFF0D8;
+  border-color: #F6E9C6;
+  color: #468847;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: #DFF0F8;
+  border-color: #D6E9C6;
+  color: #468847;
+  text-align: left;
+}
+
+#error_explanation {
+ padding: 15px 15px 15px 30px;
+ margin-bottom: 30px;
+}
