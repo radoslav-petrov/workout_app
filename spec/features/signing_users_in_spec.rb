@@ -1,12 +1,12 @@
 require 'rails_helper'
 
-RSpec.feature 'Users Sign-in' do
+RSpec.feature 'Users Sign In' do
 
   before do
     @user = User.create(email: 'email@example.com', password: 'password')
   end
 
-  scenario 'With valid credentials' do
+  scenario 'with valid credentials' do
     visit '/'
 
     click_link 'Sign in'
