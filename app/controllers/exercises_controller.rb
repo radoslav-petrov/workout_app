@@ -1,4 +1,5 @@
 class ExercisesController < ApplicationController
+  before_action :authenticate_user!
 
   def index
   end
@@ -19,6 +20,10 @@ class ExercisesController < ApplicationController
     end
   end
 
+  def show
+    @exercise = find_exercise
+  end
+
   private
 
   def exercise_params
@@ -26,6 +31,6 @@ class ExercisesController < ApplicationController
   end
 
   def find_exercise
-
+    current_user.exercises.find(params[:id])
   end
 end
