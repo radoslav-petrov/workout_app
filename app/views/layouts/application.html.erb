@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <%= render 'shared/header' %>
-    <%= render 'shared/main' %>
+    <%= render 'layouts/header', user: current_user, logged_in: user_signed_in? %>
+    <%= render 'layouts/main', flashes: flash %>
   </body>
 </html>
