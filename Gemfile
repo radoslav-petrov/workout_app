@@ -46,6 +46,7 @@ group :development, :test do
   gem 'rspec-rails', '3.6.0'
   gem 'spring-commands-rspec', '1.0.4'
   gem 'factory_girl_rails', '4.8.0'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
 group :test do
