@@ -30,11 +30,6 @@ Metrics/LineLength:
 Metrics/MethodLength:
   Max: 15
 
-# Offense count: 1
-Style/DateTime:
-  Exclude:
-    - 'spec/factories/exercises.rb'
-
 # Offense count: 14
 Style/Documentation:
   Exclude:
