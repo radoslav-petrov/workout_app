@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170730172910) do
+ActiveRecord::Schema.define(version: 20_170_730_172_910) do
   create_table 'exercises', force: :cascade do |t|
     t.integer 'duration_in_min'
     t.text 'workout'
