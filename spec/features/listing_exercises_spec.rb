@@ -5,8 +5,12 @@ RSpec.feature 'Listing Exercises' do
     @user = User.create(email: 'email@example.com', password: 'password')
     login_as(@user)
 
-    @first_exercise = @user.exercises.create(duration_in_min: 10, workout: 'First exercise', workout_date: '2017-01-01')
-    @second_exercise = @user.exercises.create(duration_in_min: 20, workout: 'Second exercise', workout_date: '2017-01-02')
+    @first_exercise = @user.exercises.create(duration_in_min: 10,
+                                             workout: 'First exercise',
+                                             workout_date: '2017-01-01')
+    @second_exercise = @user.exercises.create(duration_in_min: 20,
+                                              workout: 'Second exercise',
+                                              workout_date: '2017-01-02')
   end
 
   scenario 'shows user\'s workout for last 7 days' do
