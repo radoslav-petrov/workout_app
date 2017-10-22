@@ -25,5 +25,4 @@ RSpec.feature 'Listing Exercises' do
     expect(page).to have_content(@second_exercise.workout)
     expect(page).to have_content(@second_exercise.workout_date)
   end
-
 end
