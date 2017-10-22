@@ -23,7 +23,8 @@ Metrics/BlockLength:
 # Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
 # URISchemes: http, https
 Metrics/LineLength:
-  Max: 154
+  Exclude:
+    - 'config/initializers/devise.rb'
 
 # Offense count: 1
 # Configuration parameters: CountComments.
