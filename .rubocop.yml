@@ -1,0 +1,17 @@
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'db/schema.rb'
+    - 'Guardfile'
+
+Metrics/LineLength:
+  Exclude:
+    - 'config/initializers/devise.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*'
+  Max: 11
+
+Style/Documentation:
+  Enabled: false
