@@ -4,7 +4,7 @@ module ApplicationHelper
   def devise_error_messages!
     return '' if resource.errors.empty?
 
-    messages = resource.errors.full_messages.map do |msg|
+    resource.errors.full_messages.map do |msg|
       content_tag(:li, msg)
     end.join
     html = <<~HTML
