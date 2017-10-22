@@ -22,39 +22,6 @@ Layout/IndentHeredoc:
   Exclude:
     - 'app/helpers/application_helper.rb'
 
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-# SupportedStyles: normal, rails
-Layout/IndentationConsistency:
-  Exclude:
-    - 'app/helpers/application_helper.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Layout/LeadingCommentSpace:
-  Exclude:
-    - 'Guardfile'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Layout/MultilineBlockLayout:
-  Exclude:
-    - 'app/helpers/application_helper.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-Layout/SpaceInsideBrackets:
-  Exclude:
-    - 'config/environments/production.rb'
-
-# Offense count: 6
-# Cop supports --auto-correct.
-Layout/TrailingWhitespace:
-  Exclude:
-    - 'app/helpers/application_helper.rb'
-    - 'spec/controllers/exercises_controller_spec.rb'
-
 # Offense count: 1
 Lint/UselessAssignment:
   Exclude:
