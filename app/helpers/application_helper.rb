@@ -4,7 +4,8 @@ module ApplicationHelper
     return '' if resource.errors.empty?
     
     messages = resource.errors.full_messages.map {
-      |msg| content_tag(:li, msg) }.join
+      |msg| content_tag(:li, msg) 
+    }.join
       html = <<-HTML
 <div class="alert alert-error alert-danger">
   <a href='#' class='close' data-dismiss='alert' &#215;></a>
