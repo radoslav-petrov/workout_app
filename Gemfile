@@ -35,24 +35,24 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'autoprefixer-rails', '7.1.2.3'
+gem 'bootstrap-sass', '3.3.7'
+gem 'devise', '4.3.0'
 gem 'jquery-rails', '4.3.1'
 gem 'jquery-ui-rails', '6.0.1'
-gem 'bootstrap-sass', '3.3.7'
-gem 'autoprefixer-rails', '7.1.2.3'
-gem 'devise', '4.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and
   # get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
-  gem 'rspec-rails', '3.6.0'
-  gem 'spring-commands-rspec', '1.0.4'
   gem 'factory_girl_rails', '4.8.0'
+  gem 'rspec-rails', '3.6.0'
+  gem 'rubocop', require: false
   gem 'shoulda-matchers',
       git: 'https://github.com/thoughtbot/shoulda-matchers.git',
       branch: 'rails-5'
-  gem 'rubocop', require: false
+  gem 'spring-commands-rspec', '1.0.4'
 end
 
 group :test do
@@ -62,8 +62,8 @@ end
 group :development do
   # Access an IRB console on exception pages or by using
   # <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application
   # running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
