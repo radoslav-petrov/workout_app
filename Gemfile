@@ -46,7 +46,7 @@ group :development, :test do
   # get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
-  gem 'factory_girl_rails', '4.8.0'
+  gem 'factory_bot_rails'
   gem 'rspec-rails', '3.6.0'
   gem 'rubocop', require: false
   gem 'shoulda-matchers',
