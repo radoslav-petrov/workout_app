@@ -12,7 +12,7 @@ module ApplicationHelper
         <a href='#' class='close' data-dismiss='alert' &#215;></a>
         <%= content_tag :div, msg if msg.is_a?(String) %>
       </div>
-HTML
+    HTML
     html.html_safe
   end
 end
