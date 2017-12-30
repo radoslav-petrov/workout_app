@@ -8,7 +8,7 @@ require File.expand_path('../../config/environment', __FILE__)
 abort('The Rails env is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 require 'shoulda/matchers'
-include Warden::Test::Helpers
+include Warden::Test::Helpers # rubocop:disable Style/MixinUsage
 Warden.test_mode!
 # Add additional requires below this line. Rails is not loaded until this point!
 

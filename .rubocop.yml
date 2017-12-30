@@ -1,17 +1,127 @@
-Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*'
-    - 'db/schema.rb'
-    - 'Guardfile'
+AllCops:
+  TargetRubyVersion: 2.4
+
+Lint/DefEndAlignment:
+  EnforcedStyleAlignWith: start_of_line
 
 Metrics/LineLength:
-  Exclude:
-    - 'config/initializers/devise.rb'
+  Max: 128
+  AllowURI: true
 
-Metrics/MethodLength:
-  Exclude:
-    - 'db/migrate/*'
-  Max: 11
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Rails/ActionFilter:
+  EnforcedStyle: action
+
+Rails/DynamicFindBy:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/Output:
+  Include:
+    - app/**/*.rb
+    - config/**/*.rb
+
+Rails/OutputSafety:
+  Enabled: false
+
+Rails/RequestReferer:
+  EnforcedStyle: referrer
+
+Rails/SafeNavigation:
+  ConvertTry: true
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/PerlBackrefs:
+  Enabled: false
+
+Naming/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/SignalException:
+  EnforcedStyle: only_raise
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Style/LambdaCall:
+  EnforcedStyle: braces
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 100
+
+Metrics/ModuleLength:
+  Max: 100
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+
+Style/SymbolArray:
+  Enabled: true
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent

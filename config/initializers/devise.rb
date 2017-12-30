@@ -8,7 +8,10 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
+  #
+  # rubocop:disable Metrics/LineLength
   # config.secret_key = '9b2d0e808323ee2f4de8b510440bbb3d8aaed90d195f3850fcd808537e97e2e82ad930e6794611b374b9edca6ff51014af63009d487e967b75e6276537863d1d'
+  # rubocop:enable Metrics/LineLength
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -110,7 +113,10 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
+  #
+  # rubocop:disable Metrics/LineLength
   # config.pepper = '10a1ec7ee3635640876fd72f6076f9642d7c0e26003c876b79a16468bdade20114321ee434a5243f51de9157e16ffa02ad73696b15b002da3ecaeb5db0571d07'
+  # rubocop:enable Metrics/LineLength
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
